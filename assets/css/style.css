@@ -1,9 +1,11 @@
 /* Селектор тегу (типу) */
 h1 {
     color: blue;
+    font-family: initial;
+    border: inherit;
 }
 
-/* Селектор класу */
+/* Селектор класу */ 
 .annotation {
     font-size: 20px;
 }
@@ -12,4 +14,12 @@ h1 {
 
 #subscribe-btn {
     color: red;
+}
+
+
+
+body {
+    font-family: sans-serif;
+    border: 3px red solid;
+    text-align: center;
 }
