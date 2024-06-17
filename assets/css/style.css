@@ -1,25 +1,36 @@
-/* Селектор тегу (типу) */
-h1 {
-    color: blue;
-    font-family: initial;
-    border: inherit;
-}
-
-/* Селектор класу */ 
-.annotation {
-    font-size: 20px;
-}
-
-/* Селектор ідетифікатора */
-
-#subscribe-btn {
-    color: red;
+p {
+    width: 200px;
+    height: 300px;
+    background-color: ghostwhite;
+    border: 1px solid red;
+    padding: 20px;
+    margin: 10px;
 }
 
 
 
-body {
-    font-family: sans-serif;
-    border: 3px red solid;
-    text-align: center;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.nav-link-item {
+    display: inline;
 }
