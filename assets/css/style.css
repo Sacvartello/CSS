@@ -1,15 +1,31 @@
+body {
+    /* text-align: right; */
+}
 p {
     width: 200px;
-    height: 300px;
-    background-color: ghostwhite;
+    /* height: 300px; */
+    /* background-color: ghostwhite; */
     border: 1px solid red;
     padding: 20px;
     margin: 10px;
+
+    display: inline-block;
+    /* text-align: right; */
+    vertical-align: middle;
 }
 
 
 
+a {
+    width: 100px;
+    height: 50px;
+    border: 1px solid green;
+    padding: 20px;
+    margin: 10px;
 
+    display: inline-block;
+
+}
 
 
 
