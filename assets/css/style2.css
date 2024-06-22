@@ -1,40 +1,41 @@
-html {
-    font-size: 16px;
-}
-body {
-    font-family: Lato;
+h2, p{
     font-style: italic;
-    font-weight: 900;
-    line-height: 1.15;
-}
-p {
-   /* text-align: ; */
-   font-size: 1rem;
-   /* font-family: ; */
 }
 
-h1 {
-    font-size: 2em;
-    text-transform: capitalize;
-}
-div {
-    font-size: 1.5em;
-}
+/*
+Комбінатори
+- > дочірні ел
+-  потомків
 
-.a {
-    font-size: 3vw;
-}
-.b {
-    white-space: pre;
-    text-transform: lowercase;
-}
-.c {
-    width: 300px;
+- ~ сусідніх (наступних)
+- + наступого
+*/
+
+
+
+/* Дочірні */
+body > * {
     border: 2px solid red;
-    padding: 10px;
+}
+section > * {
+    font-weight: lighter;
+}
 
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    text-transform: uppercase;
+/* Потомків */
+section h2 {
+    color: blue;
+
+
+/* Наступного */
+}
+h2 + p {
+    font-weight: bolder;
+    background-color: bisque;
+}
+
+
+
+/* Сусідніх */
+h2+p~p {
+    color: chocolate;
 }
