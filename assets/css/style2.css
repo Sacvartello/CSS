@@ -15,6 +15,7 @@ p {
 
 h1 {
     font-size: 2em;
+    text-transform: capitalize;
 }
 div {
     font-size: 1.5em;
@@ -25,12 +26,15 @@ div {
 }
 .b {
     white-space: pre;
+    text-transform: lowercase;
 }
 .c {
     width: 300px;
     border: 2px solid red;
+    padding: 10px;
+
     white-space: nowrap;
     overflow: hidden;
-    padding: 10px;
     text-overflow: ellipsis;
+    text-transform: uppercase;
 }
