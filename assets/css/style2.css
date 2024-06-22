@@ -1,8 +1,11 @@
-body {
+html {
     font-size: 16px;
+}
+body {
     font-family: Lato;
     font-style: italic;
     font-weight: 900;
+    line-height: 1.15;
 }
 p {
    /* text-align: ; */
@@ -19,4 +22,15 @@ div {
 
 .a {
     font-size: 3vw;
+}
+.b {
+    white-space: pre;
+}
+.c {
+    width: 300px;
+    border: 2px solid red;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 10px;
+    text-overflow: ellipsis;
 }
