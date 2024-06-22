@@ -1,41 +1,82 @@
-h2, p{
-    font-style: italic;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  --user-photo-width: 100px;
 }
 
-/*
-Комбінатори
-- > дочірні ел
--  потомків
-
-- ~ сусідніх (наступних)
-- + наступого
-*/
-
-
-
-/* Дочірні */
-body > * {
-    border: 2px solid red;
+body {
+  font-family: sans-serif;
 }
-section > * {
-    font-weight: lighter;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-/* Потомків */
-section h2 {
-    color: blue;
-
-
-/* Наступного */
+.bg {
+  background-image: url(./../imgs/pexels-photo-813269.jpeg);
+  height: 150px;
+  color: white;
+  padding: 20px;
+  text-align: right;
 }
-h2 + p {
-    font-weight: bolder;
-    background-color: bisque;
+.userCard {
+  max-width: 300px;
+  width: 100%;
+  min-width: 150px;
+  margin: 50px auto;
+  border-radius: 30px;
+  box-shadow: 0 0 10px gray;
+  overflow: hidden;
+  text-align: center;
 }
 
+img {
+  max-width: var(--user-photo-width);
+  width: 100%;
+  min-width: calc(var(--user-photo-width) / 2);
+  max-height: var(--user-photo-width);
+  height: 100%;
+  min-height: calc(var(--user-photo-width) / 2);
+  object-fit: cover;
+  border-radius: 30px;
+  display: inline-block;
+  margin-top: calc((-1) * var(--user-photo-width) / 2);
+  border: 2px solid whitesmoke;
+}
 
+h2 {
+  font-size: 2rem;
+  margin: 0.5em;
+}
+h2 + div {
+  font-size: 1 rem;
+  margin: 0.5em;
+}
+div + div {
+  font-size: 1.3rem;
+  margin: 0.5em;
+}
+p {
+    font-size: 0.75rem;
+    margin: 1em;
+}
 
-/* Сусідніх */
-h2+p~p {
-    color: chocolate;
+.a {
+    padding: 5px;
+}
+.social {
+    color: wheat;
+    padding-top: 10px;
+    font-size: 1,5rem;
+    border-radius: 50%;
+    background-color: gray;
+    width: 41px;
+    height: 41px;
+
+}
+.social + .social {
+    margin-left: 20px;
 }
