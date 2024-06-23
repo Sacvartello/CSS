@@ -1,82 +1,30 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-html {
-  --user-photo-width: 100px;
 }
 
-body {
-  font-family: sans-serif;
-}
-a {
-  text-decoration: none;
-  color: inherit;
+.outerBlock {
+  border: 5px solid blue;
+  height: 500px;;
 }
 
-.bg {
-  background-image: url(./../imgs/pexels-photo-813269.jpeg);
-  height: 150px;
-  color: white;
-  padding: 20px;
-  text-align: right;
-}
-.userCard {
-  max-width: 300px;
-  width: 100%;
-  min-width: 150px;
-  margin: 50px auto;
-  border-radius: 30px;
-  box-shadow: 0 0 10px gray;
-  overflow: hidden;
-  text-align: center;
-}
-
-img {
-  max-width: var(--user-photo-width);
-  width: 100%;
-  min-width: calc(var(--user-photo-width) / 2);
-  max-height: var(--user-photo-width);
-  height: 100%;
-  min-height: calc(var(--user-photo-width) / 2);
-  object-fit: cover;
-  border-radius: 30px;
-  display: inline-block;
-  margin-top: calc((-1) * var(--user-photo-width) / 2);
-  border: 2px solid whitesmoke;
-}
-
-h2 {
+.interBlock {
+  border: 3px solid red;
+  padding: 10px;
   font-size: 2rem;
-  margin: 0.5em;
-}
-h2 + div {
-  font-size: 1 rem;
-  margin: 0.5em;
-}
-div + div {
-  font-size: 1.3rem;
-  margin: 0.5em;
-}
-p {
-    font-size: 0.75rem;
-    margin: 1em;
 }
 
-.a {
-    padding: 5px;
+.flexParent {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-betweengit;
+  align-items:flex-start ;
+  gap: 10px;
+  flex-wrap: wrap;
 }
-.social {
-    color: wheat;
-    padding-top: 10px;
-    font-size: 1,5rem;
-    border-radius: 50%;
-    background-color: gray;
-    width: 41px;
-    height: 41px;
 
+.flexChild {
 }
-.social + .social {
-    margin-left: 20px;
+
+.child1 {
+  /* margin-right: auto; */
 }
