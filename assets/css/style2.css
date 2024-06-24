@@ -3,43 +3,25 @@
 }
 
 body {
-  /* display: flex; */
-  /* flex-direction: column; */
   min-height: 100vh;
-  /* align-items: center;
-  justify-content: center; */
   font-family: sans-serif;
+  margin: 0;
 }
-
-
-footer,
-header {
-  width: 100%;
-}
-
-
 
 header {
   display: flex;
   text-align: center;
   color: white;
-  background-image: url(./../imgs/bg.jpeg);
+  background-image: url(./../imgs/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   justify-content: center;
 }
 
-
 main {
-  width: 100%;
-  border: 2px solid green;
   color: white;
-  background-color: dimgray;
-}
-
-footer {
-  margin-top: auto;
+  background-color: black;
 }
 
 .headerClass {
@@ -51,8 +33,6 @@ footer {
   width: 50%;
   flex-wrap: wrap;
 }
-
-
 
 .iconT {
   height: 200px;
@@ -63,47 +43,55 @@ footer {
   border-radius: 50%;
 }
 
-
-
-.headerClass {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 50%;
-  flex-wrap: wrap;
-}
-
 .mainClass {
   display: flex;
   flex-direction: row;
-  /* justify-content: center; */
   text-align: center;
   justify-content: space-evenly;
   padding: 10px;
 }
 
-
 h1 {
   font-size: 2rem;
 }
-.a {
+.youtube {
   width: 33%;
 }
-.b {
+.cuorses {
   width: 33%;
 }
-.c {
+.freelancing {
   width: 33%;
 }
 
-.fa-solid, .fa-brands {
-  height: 200px;
-  width: 200px;
+.iconMain {
   padding-top: 50px;
   font-size: 5rem;
 }
+
 .Social {
   font-size: 2rem;
+}
+.aboutUs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+.iconAboutUs {
+  display: flex !important; 
+  font-size: 10rem;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 50px;
+
+}
+.footerText {
+  flex-direction: column;
+
+}
+.footerText, .iconAboutUs {
+  width: 50vw;
+  height: 100%;
 }
