@@ -6,28 +6,15 @@
   border: 5px solid blue;
   min-height: 150px;
 
-display: flex;
-flex-direction: row;
-/* justify-content: flex-end; */
-/* align-items: center; */
+  display: flex;
+  flex-direction: row;
+  /* justify-content: flex-end; */
+  /* align-items: center; */
+  flex-wrap: wrap;
 }
 .child {
   border: 5px solid red;
-}
-.child5{
-  order: 2;
-}
-.child4 {
-  order: 3;
-}
-.child3 {
-order: 4;
-}
-.child2{
-  order: 5;
-}
-
-.child1 {
-  /* align-self: flex-end; */
-  order:6;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 200px;
 }
