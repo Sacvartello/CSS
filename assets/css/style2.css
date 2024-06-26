@@ -1,120 +1,26 @@
 * {
   box-sizing: border-box;
 }
-body {
-  padding: 15px;
-  background-color: rgb(184, 184, 184);
-  display: flex;
-  flex-wrap: wrap;
-  font-family: Arial, Helvetica, sans-serif;
-  justify-content: center;
+a {
+  color: inherit;
 }
-h2 {
-  font-size: 2rem;
-  font-weight: 600;
+a:link {
+  color: brown;
 }
-.userCard {
-  margin: 15px;
-  background-color: white;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-basis: 225px;
-  flex-grow: 1;
-  min-width: 150px;
-  max-width: 300px;
-  border-radius: 30px;
-  box-shadow: 0 0 10px rgb(131, 131, 131);
-}
-.userDiscription {
-  text-align: center;
-  line-height: 1;
-  color: rgb(131, 131, 131);
+a:visited {
+  color: blue;
 }
 
-.star1 {
-  border: none;
-  background-color: rgb(200, 200, 200);
-  color: rgb(131, 131, 131);
-  border-radius: 50%;
-  height: 20px;
-  width: 20px;
-  margin-top: -10px;
+a:hover {
+  color: orange;
 }
-.star2 {
-  border: none;
-  background-color: rgb(200, 200, 200);
-  color: rgb(131, 131, 131);
-  border-radius: 50%;
-  height: 20px;
-  width: 20px;
-  margin-top: -10px;
-  color: rgb(255, 153, 0);
+a:active {
+  color: green;
 }
-
-.userImg {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
+input {
+  outline: none;
+  border: 1px solid black;
 }
-
-.memberSection {
-  align-self: stretch;
-  margin-top: auto;
-
-  display: flex;
-  justify-content: space-between;
-}
-
-.dotOnline {
-  color: rgb(100,150 ,5 );
-  font-size: 0.5rem;
-}
-.online {
-  font-size: 0.7rem;
-  color: rgb(131, 131, 131);
-}
-.userBtn {
-  display: flex;
-  flex-direction: column;
-}
-.viewCV, .offer {
-  border: 2px solid rgb(0, 140, 255);
-  border-radius: 25px;
-  padding: 20px 50px;
-  text-transform: uppercase;
-  margin: 10px;
-}
-.viewCV {
-  background-color: whitesmoke;
-  color: rgb(0, 140, 255);
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-.offer {
-  background-color: rgb(0, 140, 255);
-  color: whitesmoke;
-  font-size: 1.5rem;
-  font-weight: 700;
-  text-wrap:nowrap ;
-}
-.aboutUser {
-  background-color: rgb(200, 200, 200);
-}
-.salary {
-  line-height: 3;
-}
-.name {
-  line-height: 2;
-  font-size: 1.6rem;
-  font-weight: 400;
-}
-.geoLoc {
-  line-height: 2;
-  color: rgb(131, 131, 131);
-}
-.cardFooter {
-  margin-top:auto ;
+input:focus {
+  background-color: aqua;
 }
