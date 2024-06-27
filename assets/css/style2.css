@@ -1,37 +1,31 @@
 * {
   box-sizing: border-box;
 }
-section *, article * {
-  margin-bottom: 10px;
+table {
+  border: 2px solid black;
+  border-collapse:collapse ;
+  border-spacing: 0;
+}
+td, th {
+  border: 1px solid black;
+  padding: 5px;
+}
+thead {
+  color: white;
+}
+.chosePlan {
+  background-color: rgb(180, 189, 212)
+}
+.starter, .starterPlanCost {
+  background-color: rgb(124, 140, 180)
+}
+.econom, .economPlanCost {
+  background-color: rgb(71, 93, 151);
+}
+.standart, .standartPlanCost{
+  background-color: rgb(32, 48, 90);
+}
+.line1, .line3, .line5, .line7 :nth-child(2n+1) {
+  background-color: rgb(131, 131, 131)
 }
 
-/* section :first-child {
-  color: red;
-}
-section :last-child {
-  color: green;
-} */
- /* section:first-of-type {
-  background-color: floralwhite;
- } */
- /* p:first-of-type {
-  color: blue;
- }
- div:last-of-type {
-  color: red;
- } */
-  section :nth-child(2n) {
-    color: blue;
-  }
-  section :nth-child(2n + 1) {
-    color: red;
-  }
-  section :nth-child(1) {
-    color: green;
-  }
-  p:first-of-type {
-    font-style: italic;
-  }
-  article :last-child {
-    font-weight: 900;
-  }
