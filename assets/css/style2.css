@@ -1,26 +1,37 @@
 * {
   box-sizing: border-box;
 }
-a {
-  color: inherit;
-}
-a:link {
-  color: brown;
-}
-a:visited {
-  color: blue;
+section *, article * {
+  margin-bottom: 10px;
 }
 
-a:hover {
-  color: orange;
+/* section :first-child {
+  color: red;
 }
-a:active {
+section :last-child {
   color: green;
-}
-input {
-  outline: none;
-  border: 1px solid black;
-}
-input:focus {
-  background-color: aqua;
-}
+} */
+ /* section:first-of-type {
+  background-color: floralwhite;
+ } */
+ /* p:first-of-type {
+  color: blue;
+ }
+ div:last-of-type {
+  color: red;
+ } */
+  section :nth-child(2n) {
+    color: blue;
+  }
+  section :nth-child(2n + 1) {
+    color: red;
+  }
+  section :nth-child(1) {
+    color: green;
+  }
+  p:first-of-type {
+    font-style: italic;
+  }
+  article :last-child {
+    font-weight: 900;
+  }
