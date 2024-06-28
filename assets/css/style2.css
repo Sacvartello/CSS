@@ -25,7 +25,45 @@ thead {
 .standart, .standartPlanCost{
   background-color: rgb(32, 48, 90);
 }
-.line1, .line3, .line5, .line7 :nth-child(2n+1) {
-  background-color: rgb(131, 131, 131)
+.line2 :nth-child(2n) {
+  background-color:#f3f3f3
 }
-
+.line4 :nth-child(2n) {
+  background-color:#f3f3f3
+}
+.line6 :nth-child(2n) {
+  background-color:#f3f3f3
+}
+.line1 :nth-child(2n+1) {
+  background-color:  #dbdbdb
+}
+.line3 :nth-child(2n+1) {
+  background-color:  #dbdbdb
+}
+.line5 :nth-child(2n+1) {
+  background-color:  #dbdbdb
+}
+.line7 :nth-child(2n+1) {
+  background-color:  #dbdbdb
+}
+.line2 :nth-child(2n+1) {
+  background-color: #e6e6e6
+}
+.line4 :nth-child(2n+1) {
+  background-color: #e6e6e6
+}
+.line6 :nth-child(2n+1) {
+  background-color: #e6e6e6
+}
+.line1 :nth-child(2n) {
+  background-color: #e6e6e6
+}
+.line3 :nth-child(2n) {
+  background-color: #e6e6e6
+}
+.line5 :nth-child(2n) {
+  background-color: #e6e6e6
+}
+.line7 :nth-child(2n) {
+  background-color: #e6e6e6
+}
