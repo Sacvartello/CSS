@@ -1,69 +1,60 @@
 * {
   box-sizing: border-box;
 }
-table {
-  border: 2px solid black;
-  border-collapse:collapse ;
-  border-spacing: 0;
+.parent {
+  border:5px solid blue;
+  position: relative;
 }
-td, th {
-  border: 1px solid black;
-  padding: 5px;
+.child {
+  border: 3px solid red;
+  width: 100px;
+  height: 100px;
 }
-thead {
+.child:nth-child(1) {
+  position: relative;
+  background-color: blue;
+  /* left: 100px;
+  top: 100px; */
+}
+.child:nth-child(2){
+  position: absolute;
+  background-color: aqua;
+  right: 0;
+  top: 0;
+
+}
+/* .child:nth-child(3){
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+} */
+header {
+  background-image: url('https://images.pexels.com/photos/19400189/pexels-photo-19400189.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+h1{
+  font-size: 2rem;
   color: white;
 }
-.chosePlan {
-  background-color: rgb(180, 189, 212)
+.bg-cover{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
-.starter, .starterPlanCost {
-  background-color: rgb(124, 140, 180)
-}
-.econom, .economPlanCost {
-  background-color: rgb(71, 93, 151);
-}
-.standart, .standartPlanCost{
-  background-color: rgb(32, 48, 90);
-}
-.line2 :nth-child(2n) {
-  background-color:#f3f3f3
-}
-.line4 :nth-child(2n) {
-  background-color:#f3f3f3
-}
-.line6 :nth-child(2n) {
-  background-color:#f3f3f3
-}
-.line1 :nth-child(2n+1) {
-  background-color:  #dbdbdb
-}
-.line3 :nth-child(2n+1) {
-  background-color:  #dbdbdb
-}
-.line5 :nth-child(2n+1) {
-  background-color:  #dbdbdb
-}
-.line7 :nth-child(2n+1) {
-  background-color:  #dbdbdb
-}
-.line2 :nth-child(2n+1) {
-  background-color: #e6e6e6
-}
-.line4 :nth-child(2n+1) {
-  background-color: #e6e6e6
-}
-.line6 :nth-child(2n+1) {
-  background-color: #e6e6e6
-}
-.line1 :nth-child(2n) {
-  background-color: #e6e6e6
-}
-.line3 :nth-child(2n) {
-  background-color: #e6e6e6
-}
-.line5 :nth-child(2n) {
-  background-color: #e6e6e6
-}
-.line7 :nth-child(2n) {
-  background-color: #e6e6e6
+.a {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  border: 1px solid black;
 }
