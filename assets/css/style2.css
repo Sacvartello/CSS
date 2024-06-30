@@ -1,60 +1,19 @@
 * {
   box-sizing: border-box;
 }
-.parent {
-  border:5px solid blue;
-  position: relative;
+p::first-letter {
+  color: red;
+  font-size: 40px;
 }
-.child {
-  border: 3px solid red;
-  width: 100px;
-  height: 100px;
+p::first-line {
+  font-style: italic;
 }
-.child:nth-child(1) {
-  position: relative;
-  background-color: blue;
-  /* left: 100px;
-  top: 100px; */
+*::selection {
+  background-color: gray;
 }
-.child:nth-child(2){
-  position: absolute;
-  background-color: aqua;
-  right: 0;
-  top: 0;
-
+h1::before {
+content: '<<';
 }
-/* .child:nth-child(3){
-  position: fixed;
-  bottom: 10px;
-  left: 10px;
-} */
-header {
-  background-image: url('https://images.pexels.com/photos/19400189/pexels-photo-19400189.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-h1{
-  font-size: 2rem;
-  color: white;
-}
-.bg-cover{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.a {
-  position: fixed;
-  bottom: 10px;
-  left: 10px;
-  right: 10px;
-  border: 1px solid black;
+h1::after {
+  content: '>>';
 }
