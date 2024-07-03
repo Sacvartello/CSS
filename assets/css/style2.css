@@ -3,17 +3,27 @@
 }
 .inner-block {
   border: 3px solid green;
+  width: 50px;
+  height: 50px;
 }
 .outer-container {
   border: 3px solid blue;
+  height: 400px;
 }
 /* .grid-child {
 
 } */
 .grid-parent {
   display: grid;
-  grid-template-columns:repeat(auto-fill, minmax(100px, 1fr)) ;
-  /* grid-template-rows:repeat(4, 200px) ;*/
-  grid-auto-flow: row;
-  grid-auto-rows: 75px;
+  grid-template-columns:repeat(3, 100px) ;
+  grid-template-rows:repeat(2, 100px) ;
+  /* grid-auto-flow: row;
+  grid-auto-rows: 75px; */
+
+  align-items: start;
+  justify-items: end;
+  gap: 10px 20px;
+
+  align-content: center;
+  justify-content: center;
 } 
