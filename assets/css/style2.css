@@ -1,27 +1,19 @@
 * {
   box-sizing: border-box;
 }
-body {
-  font-size: clamp(16px, 4vw, 35px);
+.inner-block {
+  border: 3px solid green;
 }
-section {
-  display: flex;
-  gap: 10px;
+.outer-container {
+  border: 3px solid blue;
 }
-p {
-  background-color: green;
-  padding: 20px;
-}
-@media screen and (min-width: 401px) and (max-width: 600px) {
-  section{
-    flex-direction: column;
-  }
-  p{
-    padding: 40px;
-  }
-}
-@media screen and (max-width: 400px) {
-  p {
-    padding: 30px;
-  }
-}
+/* .grid-child {
+
+} */
+.grid-parent {
+  display: grid;
+  grid-template-columns:repeat(auto-fill, minmax(100px, 1fr)) ;
+  /* grid-template-rows:repeat(4, 200px) ;*/
+  grid-auto-flow: row;
+  grid-auto-rows: 75px;
+} 
